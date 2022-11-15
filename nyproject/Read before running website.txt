@@ -5,4 +5,6 @@ Note:
 2-image files eith extension .gif, webm are not supported to upload
 
 3- mp4 files are not support to upload
+4- please use enter with every input to save the data inside local storage.
+5-to go 3rd page or upload page press next button when giving input to "backlog"
  

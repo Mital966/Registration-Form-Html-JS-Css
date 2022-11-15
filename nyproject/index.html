@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="nettantrastyle.css">
+
+    
+    <title>Multi Registration form </title>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+                    
+                    <div class="fields">
+                        <div class="input-field">
+                            <label >First name</label>
+                            <input type="text" id="firstname" placeholder="Enter your Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Last name</label>
+                            <input type="text" id="lastname" placeholder="Enter your Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Date of Birth</label>
+                            <input type="date" id="dob" placeholder="Enter Birth Date" required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label >Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Father's Name</label>
+                            <input type="text" id="fathername" placeholder="Enter Father's Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Mother's Name</label>
+                            <input type="text" id="mothername" placeholder="Enter Mother's Name" required>
+                        </div>
+
+                        <div class="input-field" >
+                            <label >Gender</label>
+                            <select name="gender" id="gender" required > 
+                            <option selected hidden value=""></option>
+                            <option value="" required></option> 
+                            <option value="male">male</option>
+                             <option value="female">female</option>                        
+                        </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Nationality</label>
+                            <input type="text" id="nationality" placeholder="Enter your Nationality" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Home Adress</label>
+                            <input type="text" id="adress" placeholder="Enter your Adress" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >City</label>
+                            <input type="text" id="city" placeholder="Enter your city" required>
+                        </div>
+
+                        
+                        <div class="input-field">
+                            <label >Mobile no - Mobile</label>
+                            <input type="tel" id="mnumber" placeholder="Enter your Mobile number" pattern="[7896][0-9]{9}" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Mobile no - Home</label>
+                            <input type="tel" id="hnumber" placeholder="### #### ###" pattern="[7896][0-9]{9}" required>
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label >Country</label>
+                            <input type="text" id="country" placeholder="Enter your Country" required>
+                        </div>
+
+                    </div>
+                    
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                    
+                </div>
+                    
+
+            </div>
+
+            <div class="form second">
+                <div class="details personal">
+                    <span class="title">Academic Details</span>
+                    
+                    <div class="fields">
+                        <div class="input-field">
+                            <label >HSC Institution Name</label>
+                            <input type="text" id="hscIn" placeholder="Enter your Institution name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >HSC Board</label>
+                            <input type="text" id="hsc" placeholder="Enter Board name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Marks obtained (%)</label>
+                            <input type="number" id="hmark" placeholder="Enter your marks" required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label >SSC Institution Name</label>
+                            <input type="text" id="sscIn" placeholder="Enter your Institute name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >SSC Board</label>
+                            <input type="text" id="ssc" placeholder="Enter Borard name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Marks obtained (%)</label>
+                            <input type="number" id="smark" placeholder="Enter Marks" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Currently pursuing</label>
+                            <input type="text" id="current" placeholder="Enter Stream" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Current Educational Institution name</label>
+                            <input type="text" id="CeduIn" placeholder="Enter Institute name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Overall Percentage</label>
+                            <input type="number" id="overal" placeholder="Enter your percentage" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label >Current backlogs if any</label>
+                            <input type="text" id="back" placeholder="Enter your No of backlogs" required>
+                           
+                        </div>
+                        
+                        <div class="input-field">
+                            <label> Type Y to save or Press back to modify data </label>
+                           <input type="text" id="check" pattern=[Y,y]{1} required>
+                        </div>
+                        
+ 
+                    </div>
+                    
+                    <a href="upload.html"   class="button1" style="text-decoration: none" >
+                        <i class="uil uil-navigator"></i>
+                        <span class="btnText">Next</span>
+                    </a>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">back</span>                            
+                        </div>
+
+                    </div>
+                    
+                </div> 
+
+            </div>
+        </form>
+         
+    </div>
+      
+  <script src="script.js"></script>
+</body>
+</html>

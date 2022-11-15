@@ -1,0 +1,8 @@
+Note: 
+  
+1-Next button should be for saving the data and redirecting to next page.
+
+2-image files eith extension .gif, webm are not supported to upload
+
+3- mp4 files are not support to upload
+ 

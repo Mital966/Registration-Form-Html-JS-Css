@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="preview.css">
+    <title>Document</title>
+</head>
+<body>
+     <div class="container2">
+        <header class="header">Preview Form</header>
+        <form action="#">
+            <div class="form">
+                
+                <div id="result1" >
+                    <script>
+
+                        var parentdiv = document.getElementById("result1")
+
+                        let res = localStorage.getItem(1)
+                        var image = new Image(120,120);
+                        image.src = res;
+
+                        parentdiv.appendChild(image)
+
+                        
+                    </script>
+                </div>
+                <div>
+                    <label class="name5">Name:</label>
+                    <script>
+                        
+                        const fname = localStorage.getItem('fname')
+                        const lname = localStorage.getItem('lname')
+                       document.write(fname+" "+lname+"\n")
+                    </script>
+                </div>
+
+                <div>
+                    <label class="name5">Date of Birth :</label>
+                    <script>
+                      const dob = localStorage.getItem("dob");
+                      document.write(dob+"\n")
+                    </script>
+                </div>
+                <div>
+                    <label class="name5">Email:</label>
+                    <script>
+                    const email = localStorage.getItem("email");
+                    document.write(email+"\n")
+                </script></div>
+                <div>
+                    <label class="name5">Father's name :</label>
+                    <script>
+                    const father = localStorage.getItem("father");
+                    document.write(father)
+                </script></div>
+                <div>
+                    <label class="name5">Mother's name :</label>
+                    <script>
+                    const mother = localStorage.getItem("mother");
+                    document.write(mother)
+                </script></div>
+                <div>
+                    <label class="name5">Gender :</label>
+                    <script>
+                        const gender = localStorage.getItem("gender");
+                        document.write(gender)
+                    </script>
+                </div>
+                <div>
+                    <label class="name5">Nationality : </label>
+                    <script>
+                    
+                    const nation = localStorage.getItem("nation");
+                    document.write(nation)
+                </script></div>
+                <div>
+                    <label class="name5">Country : </label>
+                    <script>
+                    const country = localStorage.getItem("country");
+                    document.write(country)
+                </script></div>
+                <div>
+                    <label class="name5">Adress :</label>
+                    <script>
+                    const adress = localStorage.getItem("adress");
+                    document.write(adress)
+                </script></div>
+                <div>
+                    <label class="name5">City :</label>
+                    <script>
+                    const city = localStorage.getItem("city");
+                    document.write(city)
+                </script></div>
+                <div>
+                    <label class="name5">Home-Number :</label>
+                    <script>
+                    
+                    const home = localStorage.getItem("home");
+                       
+                        document.write(home)
+                        
+                </script></div>
+                <div>
+                    <label class="name5">Mobile Number :</label>
+                    <script>
+                    const mobile = localStorage.getItem("mobile");
+                    document.write(mobile)
+                </script></div>
+                <div>
+                    <label class="name5">HSC Institute Name :</label>
+                    <script>
+                    const hscIn = localStorage.getItem("hscIn");
+                    document.write(hscIn)
+                </script></div>
+                <div>
+                    <label class="name5">HSC Board :</label>
+                    <script>
+                    const hsc = localStorage.getItem("hsc");
+                    document.write(hsc)
+                </script></div>
+                <div>
+                    <label class="name5">HSC Marks :</label>
+                    <script>
+                        const hmark = localStorage.getItem("hmark");
+                        document.write(hmark)
+                    </script>
+                </div>
+                <div>
+                    <label class="name5">SSC Institute Name :</label>
+                    <script>
+                    const sscIn = localStorage.getItem("sscIn");
+                    document.write(sscIn)
+                </script></div>
+                <div>
+                    <label class="name5">SSC Board :</label>
+                    <script>
+                    const ssc = localStorage.getItem("ssc");
+                    document.write(ssc)
+
+                </script></div>
+                <div>
+                    <label class="name5">HSC Marks :</label>
+                    <script>
+                     const smark = localStorage.getItem("smark");
+                     document.write(smark)
+                </script></div>
+                <div>
+                    <label class="name5">Currently Pursuing :</label>
+                    <script>
+                        const currentpursuing  = localStorage.getItem("currentpursuing");
+                        document.write(currentpursuing)
+                    </script>
+                </div>
+                <div>
+                    <label class="name5">Current Institute Name :</label>
+                    <script>
+                         const currentIN = localStorage.getItem("currentIN");
+                         document.write(currentIN)
+                    </script>
+                </div>
+                <div>
+                    <label class="name5">Overall Marks :</label>
+                    <script>
+                        const overal = localStorage.getItem("overal");
+                        document.write(overal)
+                    </script>
+                </div>
+                 <div>
+                    <label class="name5">Current Backlogs : </label>
+                    <script>
+                 const back = localStorage.getItem("back");
+                 document.write(back)
+                </script></div>
+
+                <div>
+                    <label class="alert">Your Data Has been Submitted sucessfully....</label>
+                </div>
+
+            
+            </div>
+            
+        </form>
+     </div>
+
+    
+    <script src="preview.js"></script>
+    
+</body>
+</html>

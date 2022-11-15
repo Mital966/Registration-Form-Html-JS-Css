@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+}
+body{
+    background-image: url("../finalbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: rgba(248, 255, 255, 0.575);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.555);
+    
+}
+.container1 form{
+    position: relative;
+    margin: 16px;
+    min-height: 490px;
+    background-color: #f2f2f2;
+
+}
+.container1 form .form{
+    position:relative;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+.container1 form .form.second{
+    opacity: 100;
+    pointer-events: none;
+   
+}
+.container1 form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    cursor: pointer;
+
+}
+form button:hover{
+    background-color: #265df2;
+}
+.container1 form button{
+     font-size: 14px;
+     font-weight: 400;
+}
+form .Submit{
+    display: flex;
+    align-items: center;
+     
+}
+.container1 form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+    background-color: rgba(176, 250, 250, 0.699);
+}
+.style{
+    display: contents;
+}
+
+ .preview{
+    color: white;
+    text-decoration: none;
+ }
+ .link{
+    text-decoration: none;
+    color: white;
+ }
+ .pre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    height: 25px;
+    max-width: 200px;
+    font-size: 1;
+    border: none;
+    outline: none;
+    position: absolute;
+    border-radius: 5px;
+    
+    margin-top: 16px;
+    background-color: rgb(235, 19, 19);
+
+    color: white;
+
+    
+ }

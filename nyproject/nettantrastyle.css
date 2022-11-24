@@ -108,6 +108,17 @@ form .fields .input-field{
     color: #2e2e2e;
 }
 
+.number1{
+    width: 55px;
+    font-size: small;
+}
+
+.tele{
+    display: flex;
+    align-items: center;
+}
+
+
 .input-field input{
     outline: none;
     font-size: 14px;
@@ -183,6 +194,19 @@ form .buttons{
 form .buttons button, .backBtn{
     margin-right: 14px;
 }
+
+.tele{
+    width: 250px;
+}
+.btn{
+    width: 100px;
+    border-radius: 200px;
+    
+    background-color: rgb(63, 240, 116);
+    position:relative;
+}
+
+
 
 
 

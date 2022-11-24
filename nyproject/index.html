@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="nettantrastyle.css">
 
+
     
     <title>Multi Registration form </title>
     
@@ -35,7 +36,7 @@
 
                         <div class="input-field">
                             <label >Date of Birth</label>
-                            <input type="date" id="dob" placeholder="Enter Birth Date" required>
+                            <input type="date" id="dob" placeholder="Enter Birth Date"  required>
                         </div>
                         
                         <div class="input-field">
@@ -78,15 +79,22 @@
                             <input type="text" id="city" placeholder="Enter your city" required>
                         </div>
 
-                        
-                        <div class="input-field">
+                       
+
+                         <div class="input-field" id="tele">
                             <label >Mobile no - Mobile</label>
-                            <input type="tel" id="mnumber" placeholder="Enter your Mobile number" pattern="[7896][0-9]{9}" required>
-                        </div>
+                            <input type="tel" id="mnumber" class="tele" placeholder="## ##########" pattern="[0-9]{10}" required >
+                            <input id="btnSubmit" class="btn" type="button" value="OK" >
+                            
+                            
+                        </div> 
 
                         <div class="input-field">
                             <label >Mobile no - Home</label>
-                            <input type="tel" id="hnumber" placeholder="### #### ###" pattern="[7896][0-9]{9}" required>
+                            
+                            <input type="tel" id="hnumber" class="tele" placeholder="## ##########" pattern="[0-9]{10}" required >
+                            <input id="btnSubmit1" class="btn" type="button" value="OK" >
+                            
                             
                         </div>
 
@@ -98,7 +106,7 @@
                     </div>
                     
                     <button class="nextBtn">
-                        <span class="btnText">Next</span>
+                        <span class="btnText" id="btnSubmit">Next</span>
                         <i class="uil uil-navigator"></i>
                     </button>
                     
@@ -124,7 +132,7 @@
 
                         <div class="input-field">
                             <label >Marks obtained (%)</label>
-                            <input type="number" id="hmark" placeholder="Enter your marks" required>
+                            <input type="text" id="hmark" placeholder="Enter your marks" pattern="^100(\.0{0,2})? *%?$|^\d{1,2}(\.\d{1,2})? *%?$" required>
                         </div>
                         
                         <div class="input-field">
@@ -139,7 +147,7 @@
 
                         <div class="input-field">
                             <label >Marks obtained (%)</label>
-                            <input type="number" id="smark" placeholder="Enter Marks" required>
+                            <input type="text" id="smark" placeholder="Enter Marks" pattern="^100(\.0{0,2})? *%?$|^\d{1,2}(\.\d{1,2})? *%?$" required>
                         </div>
 
                         <div class="input-field">
@@ -154,7 +162,7 @@
 
                         <div class="input-field">
                             <label >Overall Percentage</label>
-                            <input type="number" id="overal" placeholder="Enter your percentage" required>
+                            <input type="text" id="overal" placeholder="Enter your percentage" pattern="^100(\.0{0,2})? *%?$|^\d{1,2}(\.\d{1,2})? *%?$" required>
                         </div>
 
                         <div class="input-field">
@@ -190,7 +198,71 @@
         </form>
          
     </div>
+    
       
   <script src="script.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" />
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var code = "+91";
+            $('#mnumber').val(code);
+            $('#mnumber').intlTelInput({
+            
+                autoHideDialCode: true,
+                autoPlaceholder: "ON",
+                dropdownContainer: document.body,
+                formatOnDisplay: true,
+                hiddenInput: "full_number",
+                initialCountry: "auto",
+                nationalMode: true,
+                
+                preferredCountries: ['US'],
+                separateDialCode: true
+            
+            });
+
+            $('#btnSubmit').on('click', function () {
+                var code = $("#mnumber").intlTelInput("getSelectedCountryData").dialCode;
+                var phoneNumber = $('#mnumber').val();
+                var name = $("#mnumber").intlTelInput("getSelectedCountryData").name;
+                var num1="+"+code+""+phoneNumber;
+                localStorage.setItem("Mobilenumber",num1);
+            });
+            
+        });
+
+        $(function () {
+            var code = "+91";
+            $('#hnumber').val(code);
+            $('#hnumber').intlTelInput({
+            
+                autoHideDialCode: true,
+                autoPlaceholder: "ON",
+                dropdownContainer: document.body,
+                formatOnDisplay: true,
+                hiddenInput: "full_number",
+                initialCountry: "auto",
+                nationalMode: true,
+                
+                preferredCountries: ['US'],
+                separateDialCode: true
+            
+            });
+
+            $('#btnSubmit1').on('click', function () {
+                var code = $("#hnumber").intlTelInput("getSelectedCountryData").dialCode;
+                var phoneNumber = $('#hnumber').val();
+                var name = $("#hnumber").intlTelInput("getSelectedCountryData").name;
+                var num2="+"+code+""+phoneNumber;
+                localStorage.setItem("Homenumber",num2);
+            });
+            
+        });
+    </script>
+
 </body>
 </html>

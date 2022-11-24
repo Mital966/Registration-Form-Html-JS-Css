@@ -6,7 +6,8 @@ const form = document.querySelector("form"),
 nextBtn.addEventListener("click", ()=>{
    
     allInput.forEach(input => {
-        if(input.value !=""){
+        if(input.value !="")
+        {
             /*we can use these variables for further accessibility*/ 
             form.classList.add('secActive');
             fname = document.getElementById("firstname").value;
@@ -20,7 +21,10 @@ nextBtn.addEventListener("click", ()=>{
             adress = document.getElementById("adress").value;
             city = document.getElementById("city").value;
             country = document.getElementById("country").value;
-            mobilenumber = document.getElementById("mnumber").value;
+            
+            
+           mobilenumber = document.getElementById("mnumber").value;
+
             homenumber = document.getElementById("hnumber").value;
             hscIn = document.getElementById("hscIn").value;
             hsc = document.getElementById("hsc").value;
@@ -33,7 +37,11 @@ nextBtn.addEventListener("click", ()=>{
             overal = document.getElementById("overal").value;
             back = document.getElementById("back").value;
             check = document.getElementById("check").value;
+            
+            
+            
 
+           
 
            
 
@@ -65,7 +73,8 @@ nextBtn.addEventListener("click", ()=>{
             
 
 
-        }else{
+        }       
+        else{
             form.classList.remove('secActive');
             
         }
@@ -74,6 +83,7 @@ nextBtn.addEventListener("click", ()=>{
 })
 
 backBtn.addEventListener("click",()=> form.classList.remove('secActive'));
+
 
 
 
